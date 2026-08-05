@@ -1,0 +1,43 @@
+# Training data (large, not needed at runtime)
+linelogic_data/
+*.npy
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# Training script and notebooks
+linelogic_cnn_fromscratch.py
+*.ipynb
+
+# Training artifacts we don't ship
+linelogic_output/20260729_220240/best_model.keras
+linelogic_output/20260729_220240/linelogic_cnn.tflite
+linelogic_output/20260729_220240/best_hyperparameters.json
+linelogic_output/20260729_220240/per_category_accuracy.json
+linelogic_output/20260729_220240/optuna_trials.csv
+linelogic_output/20260729_220240/training_log.csv
+linelogic_output/20260729_220240/training_curves.png
+linelogic_output/20260729_220240/training_config.json
+linelogic_output/20260729_220240/test_results.json
+linelogic_output/20260729_220240/preprocessing_demo.png
+linelogic_output/20260729_220240/input_contract.json
+
+# Earlier runs
+linelogic_output/20260729_212853/
+linelogic_output/20260729_214944/
+linelogic_output/20260729_215520/
+
+# Git / IDE
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Docs
+AGENTS.md
+categories.txt
+requirements.txt

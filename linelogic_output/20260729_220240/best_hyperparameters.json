@@ -1,0 +1,9 @@
+{
+  "learning_rate": 0.0011915001003532815,
+  "conv1": 32,
+  "conv2": 64,
+  "conv3": 256,
+  "dense_units": 256,
+  "dropout": 0.2,
+  "batch_size": 64
+}

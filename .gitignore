@@ -1,0 +1,16 @@
+# Training data (389MB, regenerable via the download step in
+# linelogic_cnn_fromscratch.py — not worth committing)
+linelogic_data/
+*.npy
+
+# Python environment
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+.idea/

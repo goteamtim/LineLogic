@@ -1,0 +1,13 @@
+{
+  "img_size": 28,
+  "channels": 1,
+  "ink": "white (high) on black (0) background",
+  "value_range": [
+    0,
+    1
+  ],
+  "centering": "crop to bounding box, pad to square, center",
+  "target_fill": 0.8,
+  "resize_filter": "LANCZOS (anti-aliased, not nearest)",
+  "note": "Canvas captures MUST be converted via preprocess_canvas_capture()"
+}

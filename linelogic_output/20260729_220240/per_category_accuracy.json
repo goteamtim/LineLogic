@@ -1,0 +1,1727 @@
+{
+  "aircraft carrier": {
+    "accuracy": 0.11333333333333333,
+    "correct": 17,
+    "total": 150
+  },
+  "airplane": {
+    "accuracy": 0.7266666666666667,
+    "correct": 109,
+    "total": 150
+  },
+  "alarm clock": {
+    "accuracy": 0.44,
+    "correct": 66,
+    "total": 150
+  },
+  "ambulance": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "angel": {
+    "accuracy": 0.7133333333333334,
+    "correct": 107,
+    "total": 150
+  },
+  "animal migration": {
+    "accuracy": 0.43333333333333335,
+    "correct": 65,
+    "total": 150
+  },
+  "ant": {
+    "accuracy": 0.24666666666666667,
+    "correct": 37,
+    "total": 150
+  },
+  "anvil": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "apple": {
+    "accuracy": 0.84,
+    "correct": 126,
+    "total": 150
+  },
+  "arm": {
+    "accuracy": 0.42,
+    "correct": 63,
+    "total": 150
+  },
+  "asparagus": {
+    "accuracy": 0.31333333333333335,
+    "correct": 47,
+    "total": 150
+  },
+  "axe": {
+    "accuracy": 0.7133333333333334,
+    "correct": 107,
+    "total": 150
+  },
+  "backpack": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "banana": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "bandage": {
+    "accuracy": 0.6066666666666667,
+    "correct": 91,
+    "total": 150
+  },
+  "barn": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "baseball": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "baseball bat": {
+    "accuracy": 0.6333333333333333,
+    "correct": 95,
+    "total": 150
+  },
+  "basket": {
+    "accuracy": 0.5066666666666667,
+    "correct": 76,
+    "total": 150
+  },
+  "basketball": {
+    "accuracy": 0.52,
+    "correct": 78,
+    "total": 150
+  },
+  "bat": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "bathtub": {
+    "accuracy": 0.6333333333333333,
+    "correct": 95,
+    "total": 150
+  },
+  "beach": {
+    "accuracy": 0.30666666666666664,
+    "correct": 46,
+    "total": 150
+  },
+  "bear": {
+    "accuracy": 0.08,
+    "correct": 12,
+    "total": 150
+  },
+  "beard": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "bed": {
+    "accuracy": 0.47333333333333333,
+    "correct": 71,
+    "total": 150
+  },
+  "bee": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "belt": {
+    "accuracy": 0.47333333333333333,
+    "correct": 71,
+    "total": 150
+  },
+  "bench": {
+    "accuracy": 0.3,
+    "correct": 45,
+    "total": 150
+  },
+  "bicycle": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "binoculars": {
+    "accuracy": 0.6066666666666667,
+    "correct": 91,
+    "total": 150
+  },
+  "bird": {
+    "accuracy": 0.24666666666666667,
+    "correct": 37,
+    "total": 150
+  },
+  "birthday cake": {
+    "accuracy": 0.4,
+    "correct": 60,
+    "total": 150
+  },
+  "blackberry": {
+    "accuracy": 0.2,
+    "correct": 30,
+    "total": 150
+  },
+  "blueberry": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "book": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "boomerang": {
+    "accuracy": 0.7466666666666667,
+    "correct": 112,
+    "total": 150
+  },
+  "bottlecap": {
+    "accuracy": 0.26,
+    "correct": 39,
+    "total": 150
+  },
+  "bowtie": {
+    "accuracy": 0.72,
+    "correct": 108,
+    "total": 150
+  },
+  "bracelet": {
+    "accuracy": 0.56,
+    "correct": 84,
+    "total": 150
+  },
+  "brain": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "bread": {
+    "accuracy": 0.42,
+    "correct": 63,
+    "total": 150
+  },
+  "bridge": {
+    "accuracy": 0.36666666666666664,
+    "correct": 55,
+    "total": 150
+  },
+  "broccoli": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "broom": {
+    "accuracy": 0.41333333333333333,
+    "correct": 62,
+    "total": 150
+  },
+  "bucket": {
+    "accuracy": 0.68,
+    "correct": 102,
+    "total": 150
+  },
+  "bulldozer": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "bus": {
+    "accuracy": 0.52,
+    "correct": 78,
+    "total": 150
+  },
+  "bush": {
+    "accuracy": 0.4266666666666667,
+    "correct": 64,
+    "total": 150
+  },
+  "butterfly": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "cactus": {
+    "accuracy": 0.6466666666666666,
+    "correct": 97,
+    "total": 150
+  },
+  "cake": {
+    "accuracy": 0.29333333333333333,
+    "correct": 44,
+    "total": 150
+  },
+  "calculator": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "calendar": {
+    "accuracy": 0.22,
+    "correct": 33,
+    "total": 150
+  },
+  "camel": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "camera": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "camouflage": {
+    "accuracy": 0.18,
+    "correct": 27,
+    "total": 150
+  },
+  "campfire": {
+    "accuracy": 0.7666666666666667,
+    "correct": 115,
+    "total": 150
+  },
+  "candle": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "cannon": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "canoe": {
+    "accuracy": 0.5866666666666667,
+    "correct": 88,
+    "total": 150
+  },
+  "car": {
+    "accuracy": 0.54,
+    "correct": 81,
+    "total": 150
+  },
+  "carrot": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "castle": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "cat": {
+    "accuracy": 0.56,
+    "correct": 84,
+    "total": 150
+  },
+  "ceiling fan": {
+    "accuracy": 0.47333333333333333,
+    "correct": 71,
+    "total": 150
+  },
+  "cello": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "cell phone": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "chair": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "chandelier": {
+    "accuracy": 0.5266666666666666,
+    "correct": 79,
+    "total": 150
+  },
+  "church": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "circle": {
+    "accuracy": 0.8533333333333334,
+    "correct": 128,
+    "total": 150
+  },
+  "clarinet": {
+    "accuracy": 0.17333333333333334,
+    "correct": 26,
+    "total": 150
+  },
+  "clock": {
+    "accuracy": 0.8,
+    "correct": 120,
+    "total": 150
+  },
+  "cloud": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "coffee cup": {
+    "accuracy": 0.36,
+    "correct": 54,
+    "total": 150
+  },
+  "compass": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "computer": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "cookie": {
+    "accuracy": 0.4533333333333333,
+    "correct": 68,
+    "total": 150
+  },
+  "cooler": {
+    "accuracy": 0.14,
+    "correct": 21,
+    "total": 150
+  },
+  "couch": {
+    "accuracy": 0.6066666666666667,
+    "correct": 91,
+    "total": 150
+  },
+  "cow": {
+    "accuracy": 0.37333333333333335,
+    "correct": 56,
+    "total": 150
+  },
+  "crab": {
+    "accuracy": 0.44666666666666666,
+    "correct": 67,
+    "total": 150
+  },
+  "crayon": {
+    "accuracy": 0.36666666666666664,
+    "correct": 55,
+    "total": 150
+  },
+  "crocodile": {
+    "accuracy": 0.5866666666666667,
+    "correct": 88,
+    "total": 150
+  },
+  "crown": {
+    "accuracy": 0.8866666666666667,
+    "correct": 133,
+    "total": 150
+  },
+  "cruise ship": {
+    "accuracy": 0.38666666666666666,
+    "correct": 58,
+    "total": 150
+  },
+  "cup": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "diamond": {
+    "accuracy": 0.82,
+    "correct": 123,
+    "total": 150
+  },
+  "dishwasher": {
+    "accuracy": 0.42,
+    "correct": 63,
+    "total": 150
+  },
+  "diving board": {
+    "accuracy": 0.2,
+    "correct": 30,
+    "total": 150
+  },
+  "dog": {
+    "accuracy": 0.18666666666666668,
+    "correct": 28,
+    "total": 150
+  },
+  "dolphin": {
+    "accuracy": 0.43333333333333335,
+    "correct": 65,
+    "total": 150
+  },
+  "donut": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "door": {
+    "accuracy": 0.6466666666666666,
+    "correct": 97,
+    "total": 150
+  },
+  "dragon": {
+    "accuracy": 0.38,
+    "correct": 57,
+    "total": 150
+  },
+  "dresser": {
+    "accuracy": 0.44666666666666666,
+    "correct": 67,
+    "total": 150
+  },
+  "drill": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "drums": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "duck": {
+    "accuracy": 0.5266666666666666,
+    "correct": 79,
+    "total": 150
+  },
+  "dumbbell": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "ear": {
+    "accuracy": 0.6333333333333333,
+    "correct": 95,
+    "total": 150
+  },
+  "elbow": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "elephant": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "envelope": {
+    "accuracy": 0.92,
+    "correct": 138,
+    "total": 150
+  },
+  "eraser": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "eye": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "eyeglasses": {
+    "accuracy": 0.52,
+    "correct": 78,
+    "total": 150
+  },
+  "face": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "fan": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "feather": {
+    "accuracy": 0.32,
+    "correct": 48,
+    "total": 150
+  },
+  "fence": {
+    "accuracy": 0.5666666666666667,
+    "correct": 85,
+    "total": 150
+  },
+  "finger": {
+    "accuracy": 0.42,
+    "correct": 63,
+    "total": 150
+  },
+  "fire hydrant": {
+    "accuracy": 0.43333333333333335,
+    "correct": 65,
+    "total": 150
+  },
+  "fireplace": {
+    "accuracy": 0.5533333333333333,
+    "correct": 83,
+    "total": 150
+  },
+  "firetruck": {
+    "accuracy": 0.5266666666666666,
+    "correct": 79,
+    "total": 150
+  },
+  "fish": {
+    "accuracy": 0.7933333333333333,
+    "correct": 119,
+    "total": 150
+  },
+  "flamingo": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "flashlight": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "flip flops": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "floor lamp": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "flower": {
+    "accuracy": 0.7266666666666667,
+    "correct": 109,
+    "total": 150
+  },
+  "flying saucer": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "foot": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "fork": {
+    "accuracy": 0.78,
+    "correct": 117,
+    "total": 150
+  },
+  "frog": {
+    "accuracy": 0.16666666666666666,
+    "correct": 25,
+    "total": 150
+  },
+  "frying pan": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "garden": {
+    "accuracy": 0.31333333333333335,
+    "correct": 47,
+    "total": 150
+  },
+  "garden hose": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "giraffe": {
+    "accuracy": 0.8666666666666667,
+    "correct": 130,
+    "total": 150
+  },
+  "goatee": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "golf club": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "grapes": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "grass": {
+    "accuracy": 0.5066666666666667,
+    "correct": 76,
+    "total": 150
+  },
+  "guitar": {
+    "accuracy": 0.3933333333333333,
+    "correct": 59,
+    "total": 150
+  },
+  "hamburger": {
+    "accuracy": 0.74,
+    "correct": 111,
+    "total": 150
+  },
+  "hammer": {
+    "accuracy": 0.72,
+    "correct": 108,
+    "total": 150
+  },
+  "hand": {
+    "accuracy": 0.74,
+    "correct": 111,
+    "total": 150
+  },
+  "harp": {
+    "accuracy": 0.7266666666666667,
+    "correct": 109,
+    "total": 150
+  },
+  "hat": {
+    "accuracy": 0.5933333333333334,
+    "correct": 89,
+    "total": 150
+  },
+  "headphones": {
+    "accuracy": 0.8266666666666667,
+    "correct": 124,
+    "total": 150
+  },
+  "hedgehog": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "helicopter": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "helmet": {
+    "accuracy": 0.5266666666666666,
+    "correct": 79,
+    "total": 150
+  },
+  "hexagon": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "hockey puck": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "hockey stick": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "horse": {
+    "accuracy": 0.7466666666666667,
+    "correct": 112,
+    "total": 150
+  },
+  "hospital": {
+    "accuracy": 0.56,
+    "correct": 84,
+    "total": 150
+  },
+  "hot air balloon": {
+    "accuracy": 0.6666666666666666,
+    "correct": 100,
+    "total": 150
+  },
+  "hot dog": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "hot tub": {
+    "accuracy": 0.25333333333333335,
+    "correct": 38,
+    "total": 150
+  },
+  "hourglass": {
+    "accuracy": 0.8133333333333334,
+    "correct": 122,
+    "total": 150
+  },
+  "house": {
+    "accuracy": 0.84,
+    "correct": 126,
+    "total": 150
+  },
+  "house plant": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "hurricane": {
+    "accuracy": 0.32,
+    "correct": 48,
+    "total": 150
+  },
+  "ice cream": {
+    "accuracy": 0.6933333333333334,
+    "correct": 104,
+    "total": 150
+  },
+  "jacket": {
+    "accuracy": 0.5066666666666667,
+    "correct": 76,
+    "total": 150
+  },
+  "jail": {
+    "accuracy": 0.7066666666666667,
+    "correct": 106,
+    "total": 150
+  },
+  "kangaroo": {
+    "accuracy": 0.5533333333333333,
+    "correct": 83,
+    "total": 150
+  },
+  "key": {
+    "accuracy": 0.38,
+    "correct": 57,
+    "total": 150
+  },
+  "keyboard": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "knee": {
+    "accuracy": 0.3,
+    "correct": 45,
+    "total": 150
+  },
+  "knife": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "ladder": {
+    "accuracy": 0.8666666666666667,
+    "correct": 130,
+    "total": 150
+  },
+  "lantern": {
+    "accuracy": 0.26666666666666666,
+    "correct": 40,
+    "total": 150
+  },
+  "laptop": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "leaf": {
+    "accuracy": 0.6066666666666667,
+    "correct": 91,
+    "total": 150
+  },
+  "leg": {
+    "accuracy": 0.18,
+    "correct": 27,
+    "total": 150
+  },
+  "light bulb": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "lighter": {
+    "accuracy": 0.7066666666666667,
+    "correct": 106,
+    "total": 150
+  },
+  "lighthouse": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "lightning": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "line": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "lion": {
+    "accuracy": 0.6666666666666666,
+    "correct": 100,
+    "total": 150
+  },
+  "lipstick": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "lobster": {
+    "accuracy": 0.22,
+    "correct": 33,
+    "total": 150
+  },
+  "lollipop": {
+    "accuracy": 0.8666666666666667,
+    "correct": 130,
+    "total": 150
+  },
+  "mailbox": {
+    "accuracy": 0.68,
+    "correct": 102,
+    "total": 150
+  },
+  "map": {
+    "accuracy": 0.5866666666666667,
+    "correct": 88,
+    "total": 150
+  },
+  "marker": {
+    "accuracy": 0.19333333333333333,
+    "correct": 29,
+    "total": 150
+  },
+  "matches": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "megaphone": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "mermaid": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "microphone": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "microwave": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "monkey": {
+    "accuracy": 0.4533333333333333,
+    "correct": 68,
+    "total": 150
+  },
+  "moon": {
+    "accuracy": 0.4,
+    "correct": 60,
+    "total": 150
+  },
+  "mosquito": {
+    "accuracy": 0.26666666666666666,
+    "correct": 40,
+    "total": 150
+  },
+  "motorbike": {
+    "accuracy": 0.44,
+    "correct": 66,
+    "total": 150
+  },
+  "mountain": {
+    "accuracy": 0.54,
+    "correct": 81,
+    "total": 150
+  },
+  "mouse": {
+    "accuracy": 0.18666666666666668,
+    "correct": 28,
+    "total": 150
+  },
+  "moustache": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "mouth": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "mug": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "mushroom": {
+    "accuracy": 0.72,
+    "correct": 108,
+    "total": 150
+  },
+  "nail": {
+    "accuracy": 0.54,
+    "correct": 81,
+    "total": 150
+  },
+  "necklace": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "nose": {
+    "accuracy": 0.5466666666666666,
+    "correct": 82,
+    "total": 150
+  },
+  "ocean": {
+    "accuracy": 0.38,
+    "correct": 57,
+    "total": 150
+  },
+  "octagon": {
+    "accuracy": 0.5066666666666667,
+    "correct": 76,
+    "total": 150
+  },
+  "octopus": {
+    "accuracy": 0.8733333333333333,
+    "correct": 131,
+    "total": 150
+  },
+  "onion": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "oven": {
+    "accuracy": 0.25333333333333335,
+    "correct": 38,
+    "total": 150
+  },
+  "owl": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "paintbrush": {
+    "accuracy": 0.24666666666666667,
+    "correct": 37,
+    "total": 150
+  },
+  "paint can": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "palm tree": {
+    "accuracy": 0.7933333333333333,
+    "correct": 119,
+    "total": 150
+  },
+  "panda": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "pants": {
+    "accuracy": 0.78,
+    "correct": 117,
+    "total": 150
+  },
+  "paper clip": {
+    "accuracy": 0.8,
+    "correct": 120,
+    "total": 150
+  },
+  "parachute": {
+    "accuracy": 0.76,
+    "correct": 114,
+    "total": 150
+  },
+  "parrot": {
+    "accuracy": 0.37333333333333335,
+    "correct": 56,
+    "total": 150
+  },
+  "passport": {
+    "accuracy": 0.16,
+    "correct": 24,
+    "total": 150
+  },
+  "peanut": {
+    "accuracy": 0.37333333333333335,
+    "correct": 56,
+    "total": 150
+  },
+  "pear": {
+    "accuracy": 0.6866666666666666,
+    "correct": 103,
+    "total": 150
+  },
+  "peas": {
+    "accuracy": 0.43333333333333335,
+    "correct": 65,
+    "total": 150
+  },
+  "pencil": {
+    "accuracy": 0.30666666666666664,
+    "correct": 46,
+    "total": 150
+  },
+  "penguin": {
+    "accuracy": 0.68,
+    "correct": 102,
+    "total": 150
+  },
+  "piano": {
+    "accuracy": 0.43333333333333335,
+    "correct": 65,
+    "total": 150
+  },
+  "pickup truck": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "picture frame": {
+    "accuracy": 0.7466666666666667,
+    "correct": 112,
+    "total": 150
+  },
+  "pig": {
+    "accuracy": 0.32666666666666666,
+    "correct": 49,
+    "total": 150
+  },
+  "pillow": {
+    "accuracy": 0.42,
+    "correct": 63,
+    "total": 150
+  },
+  "pineapple": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "pizza": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "pliers": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "police car": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "pond": {
+    "accuracy": 0.17333333333333334,
+    "correct": 26,
+    "total": 150
+  },
+  "pool": {
+    "accuracy": 0.08,
+    "correct": 12,
+    "total": 150
+  },
+  "popsicle": {
+    "accuracy": 0.7066666666666667,
+    "correct": 106,
+    "total": 150
+  },
+  "postcard": {
+    "accuracy": 0.54,
+    "correct": 81,
+    "total": 150
+  },
+  "potato": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "power outlet": {
+    "accuracy": 0.4066666666666667,
+    "correct": 61,
+    "total": 150
+  },
+  "purse": {
+    "accuracy": 0.5933333333333334,
+    "correct": 89,
+    "total": 150
+  },
+  "rabbit": {
+    "accuracy": 0.5866666666666667,
+    "correct": 88,
+    "total": 150
+  },
+  "raccoon": {
+    "accuracy": 0.15333333333333332,
+    "correct": 23,
+    "total": 150
+  },
+  "radio": {
+    "accuracy": 0.4266666666666667,
+    "correct": 64,
+    "total": 150
+  },
+  "rain": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "rainbow": {
+    "accuracy": 0.92,
+    "correct": 138,
+    "total": 150
+  },
+  "rake": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "remote control": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "rhinoceros": {
+    "accuracy": 0.38666666666666666,
+    "correct": 58,
+    "total": 150
+  },
+  "rifle": {
+    "accuracy": 0.47333333333333333,
+    "correct": 71,
+    "total": 150
+  },
+  "river": {
+    "accuracy": 0.24,
+    "correct": 36,
+    "total": 150
+  },
+  "roller coaster": {
+    "accuracy": 0.54,
+    "correct": 81,
+    "total": 150
+  },
+  "rollerskates": {
+    "accuracy": 0.7266666666666667,
+    "correct": 109,
+    "total": 150
+  },
+  "sailboat": {
+    "accuracy": 0.8533333333333334,
+    "correct": 128,
+    "total": 150
+  },
+  "sandwich": {
+    "accuracy": 0.52,
+    "correct": 78,
+    "total": 150
+  },
+  "saw": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "saxophone": {
+    "accuracy": 0.6733333333333333,
+    "correct": 101,
+    "total": 150
+  },
+  "school bus": {
+    "accuracy": 0.31333333333333335,
+    "correct": 47,
+    "total": 150
+  },
+  "scissors": {
+    "accuracy": 0.7733333333333333,
+    "correct": 116,
+    "total": 150
+  },
+  "scorpion": {
+    "accuracy": 0.6533333333333333,
+    "correct": 98,
+    "total": 150
+  },
+  "screwdriver": {
+    "accuracy": 0.5,
+    "correct": 75,
+    "total": 150
+  },
+  "sea turtle": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "see saw": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "shark": {
+    "accuracy": 0.6533333333333333,
+    "correct": 98,
+    "total": 150
+  },
+  "sheep": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "shoe": {
+    "accuracy": 0.49333333333333335,
+    "correct": 74,
+    "total": 150
+  },
+  "shorts": {
+    "accuracy": 0.6533333333333333,
+    "correct": 98,
+    "total": 150
+  },
+  "shovel": {
+    "accuracy": 0.6266666666666667,
+    "correct": 94,
+    "total": 150
+  },
+  "sink": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "skateboard": {
+    "accuracy": 0.8466666666666667,
+    "correct": 127,
+    "total": 150
+  },
+  "skull": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "skyscraper": {
+    "accuracy": 0.5066666666666667,
+    "correct": 76,
+    "total": 150
+  },
+  "sleeping bag": {
+    "accuracy": 0.4,
+    "correct": 60,
+    "total": 150
+  },
+  "smiley face": {
+    "accuracy": 0.82,
+    "correct": 123,
+    "total": 150
+  },
+  "snail": {
+    "accuracy": 0.7866666666666666,
+    "correct": 118,
+    "total": 150
+  },
+  "snake": {
+    "accuracy": 0.5333333333333333,
+    "correct": 80,
+    "total": 150
+  },
+  "snorkel": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "snowflake": {
+    "accuracy": 0.7733333333333333,
+    "correct": 116,
+    "total": 150
+  },
+  "snowman": {
+    "accuracy": 0.8466666666666667,
+    "correct": 127,
+    "total": 150
+  },
+  "soccer ball": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "sock": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "speedboat": {
+    "accuracy": 0.37333333333333335,
+    "correct": 56,
+    "total": 150
+  },
+  "spider": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "spoon": {
+    "accuracy": 0.6,
+    "correct": 90,
+    "total": 150
+  },
+  "spreadsheet": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "square": {
+    "accuracy": 0.78,
+    "correct": 117,
+    "total": 150
+  },
+  "squiggle": {
+    "accuracy": 0.1,
+    "correct": 15,
+    "total": 150
+  },
+  "squirrel": {
+    "accuracy": 0.6866666666666666,
+    "correct": 103,
+    "total": 150
+  },
+  "stairs": {
+    "accuracy": 0.78,
+    "correct": 117,
+    "total": 150
+  },
+  "star": {
+    "accuracy": 0.8933333333333333,
+    "correct": 134,
+    "total": 150
+  },
+  "steak": {
+    "accuracy": 0.36666666666666664,
+    "correct": 55,
+    "total": 150
+  },
+  "stereo": {
+    "accuracy": 0.5133333333333333,
+    "correct": 77,
+    "total": 150
+  },
+  "stethoscope": {
+    "accuracy": 0.7,
+    "correct": 105,
+    "total": 150
+  },
+  "stitches": {
+    "accuracy": 0.52,
+    "correct": 78,
+    "total": 150
+  },
+  "stop sign": {
+    "accuracy": 0.6333333333333333,
+    "correct": 95,
+    "total": 150
+  },
+  "stove": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "strawberry": {
+    "accuracy": 0.6733333333333333,
+    "correct": 101,
+    "total": 150
+  },
+  "streetlight": {
+    "accuracy": 0.6066666666666667,
+    "correct": 91,
+    "total": 150
+  },
+  "string bean": {
+    "accuracy": 0.26666666666666666,
+    "correct": 40,
+    "total": 150
+  },
+  "submarine": {
+    "accuracy": 0.62,
+    "correct": 93,
+    "total": 150
+  },
+  "suitcase": {
+    "accuracy": 0.46,
+    "correct": 69,
+    "total": 150
+  },
+  "sun": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "swan": {
+    "accuracy": 0.5266666666666666,
+    "correct": 79,
+    "total": 150
+  },
+  "sweater": {
+    "accuracy": 0.7666666666666667,
+    "correct": 115,
+    "total": 150
+  },
+  "swing set": {
+    "accuracy": 0.84,
+    "correct": 126,
+    "total": 150
+  },
+  "sword": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "syringe": {
+    "accuracy": 0.4866666666666667,
+    "correct": 73,
+    "total": 150
+  },
+  "table": {
+    "accuracy": 0.78,
+    "correct": 117,
+    "total": 150
+  },
+  "teapot": {
+    "accuracy": 0.72,
+    "correct": 108,
+    "total": 150
+  },
+  "teddy-bear": {
+    "accuracy": 0.58,
+    "correct": 87,
+    "total": 150
+  },
+  "telephone": {
+    "accuracy": 0.36,
+    "correct": 54,
+    "total": 150
+  },
+  "television": {
+    "accuracy": 0.8733333333333333,
+    "correct": 131,
+    "total": 150
+  },
+  "tennis racquet": {
+    "accuracy": 0.66,
+    "correct": 99,
+    "total": 150
+  },
+  "tent": {
+    "accuracy": 0.7666666666666667,
+    "correct": 115,
+    "total": 150
+  },
+  "The Eiffel Tower": {
+    "accuracy": 0.8133333333333334,
+    "correct": 122,
+    "total": 150
+  },
+  "The Great Wall of China": {
+    "accuracy": 0.21333333333333335,
+    "correct": 32,
+    "total": 150
+  },
+  "The Mona Lisa": {
+    "accuracy": 0.7333333333333333,
+    "correct": 110,
+    "total": 150
+  },
+  "tiger": {
+    "accuracy": 0.22666666666666666,
+    "correct": 34,
+    "total": 150
+  },
+  "toaster": {
+    "accuracy": 0.44,
+    "correct": 66,
+    "total": 150
+  },
+  "toe": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "toilet": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "tooth": {
+    "accuracy": 0.7866666666666666,
+    "correct": 118,
+    "total": 150
+  },
+  "toothbrush": {
+    "accuracy": 0.6466666666666666,
+    "correct": 97,
+    "total": 150
+  },
+  "toothpaste": {
+    "accuracy": 0.23333333333333334,
+    "correct": 35,
+    "total": 150
+  },
+  "tornado": {
+    "accuracy": 0.7533333333333333,
+    "correct": 113,
+    "total": 150
+  },
+  "tractor": {
+    "accuracy": 0.5133333333333333,
+    "correct": 77,
+    "total": 150
+  },
+  "traffic light": {
+    "accuracy": 0.6533333333333333,
+    "correct": 98,
+    "total": 150
+  },
+  "train": {
+    "accuracy": 0.35333333333333333,
+    "correct": 53,
+    "total": 150
+  },
+  "tree": {
+    "accuracy": 0.6866666666666666,
+    "correct": 103,
+    "total": 150
+  },
+  "triangle": {
+    "accuracy": 0.8933333333333333,
+    "correct": 134,
+    "total": 150
+  },
+  "trombone": {
+    "accuracy": 0.36,
+    "correct": 54,
+    "total": 150
+  },
+  "truck": {
+    "accuracy": 0.1,
+    "correct": 15,
+    "total": 150
+  },
+  "trumpet": {
+    "accuracy": 0.44666666666666666,
+    "correct": 67,
+    "total": 150
+  },
+  "t-shirt": {
+    "accuracy": 0.7133333333333334,
+    "correct": 107,
+    "total": 150
+  },
+  "umbrella": {
+    "accuracy": 0.9066666666666666,
+    "correct": 136,
+    "total": 150
+  },
+  "underwear": {
+    "accuracy": 0.5866666666666667,
+    "correct": 88,
+    "total": 150
+  },
+  "van": {
+    "accuracy": 0.38666666666666666,
+    "correct": 58,
+    "total": 150
+  },
+  "vase": {
+    "accuracy": 0.68,
+    "correct": 102,
+    "total": 150
+  },
+  "violin": {
+    "accuracy": 0.4,
+    "correct": 60,
+    "total": 150
+  },
+  "washing machine": {
+    "accuracy": 0.9066666666666666,
+    "correct": 136,
+    "total": 150
+  },
+  "watermelon": {
+    "accuracy": 0.6133333333333333,
+    "correct": 92,
+    "total": 150
+  },
+  "waterslide": {
+    "accuracy": 0.2866666666666667,
+    "correct": 43,
+    "total": 150
+  },
+  "whale": {
+    "accuracy": 0.36666666666666664,
+    "correct": 55,
+    "total": 150
+  },
+  "wheel": {
+    "accuracy": 0.6466666666666666,
+    "correct": 97,
+    "total": 150
+  },
+  "windmill": {
+    "accuracy": 0.68,
+    "correct": 102,
+    "total": 150
+  },
+  "wine bottle": {
+    "accuracy": 0.7866666666666666,
+    "correct": 118,
+    "total": 150
+  },
+  "wine glass": {
+    "accuracy": 0.8333333333333334,
+    "correct": 125,
+    "total": 150
+  },
+  "wristwatch": {
+    "accuracy": 0.5733333333333334,
+    "correct": 86,
+    "total": 150
+  },
+  "yoga": {
+    "accuracy": 0.34,
+    "correct": 51,
+    "total": 150
+  },
+  "zebra": {
+    "accuracy": 0.64,
+    "correct": 96,
+    "total": 150
+  },
+  "zigzag": {
+    "accuracy": 0.84,
+    "correct": 126,
+    "total": 150
+  }
+}

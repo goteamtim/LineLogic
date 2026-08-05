@@ -1,0 +1,8 @@
+optuna 
+tensorflow[and-cuda]
+scikit-learn 
+pandas
+jupyter 
+ipykernel
+matplotlib
+pillow

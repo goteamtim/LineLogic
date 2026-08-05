@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LineLogic!</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #1a1a2e;
+      --surface: #16213e;
+      --accent: #e94560;
+      --accent2: #0f3460;
+      --text: #eaeaea;
+      --muted: #8892a4;
+      --green: #27ae60;
+      --yellow: #f39c12;
+      --canvas-bg: #ffffff;
+      --radius: 12px;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 24px 16px;
+      gap: 20px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      letter-spacing: -0.5px;
+    }
+    h1 span { color: var(--accent); }
+
+    /* ── Top bar ─────────────────────────────────────────────────── */
+    .top-bar {
+      width: 100%;
+      max-width: 740px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+      gap: 12px;
+    }
+
+    .target-word {
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+    .target-word strong {
+      color: var(--text);
+      font-size: 1.5rem;
+      margin-left: 6px;
+    }
+
+    .timer {
+      font-size: 2rem;
+      font-weight: 700;
+      min-width: 48px;
+      text-align: center;
+      transition: color 0.3s;
+    }
+    .timer.urgent { color: var(--accent); }
+
+    .score-box {
+      text-align: right;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+    .score-box .total { font-size: 1.4rem; font-weight: 700; color: var(--text); }
+
+    /* ── Main area ───────────────────────────────────────────────── */
+    .main {
+      display: flex;
+      gap: 20px;
+      width: 100%;
+      max-width: 740px;
+      align-items: flex-start;
+    }
+
+    /* ── Canvas ──────────────────────────────────────────────────── */
+    .canvas-wrap {
+      position: relative;
+      flex-shrink: 0;
+    }
+
+    #drawCanvas {
+      display: block;
+      background: var(--canvas-bg);
+      border-radius: var(--radius);
+      cursor: crosshair;
+      touch-action: none;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+    }
+
+    /* ── Overlay (win / time up) ─────────────────────────────────── */
+    .overlay {
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      padding: 24px;
+      text-align: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s;
+    }
+    .overlay.visible { opacity: 1; pointer-events: all; }
+    .overlay.win  { background: rgba(39,174,96,0.92); }
+    .overlay.fail { background: rgba(233,69,96,0.92); }
+
+    .overlay .big { font-size: 2rem; font-weight: 800; }
+    .overlay .sub { font-size: 1rem; color: rgba(255,255,255,0.85); }
+    .overlay .pts { font-size: 1.5rem; font-weight: 700; }
+
+    /* ── Sidebar (predictions) ───────────────────────────────────── */
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .sidebar h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+    }
+
+    .predictions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .pred-item {
+      background: var(--surface);
+      border-radius: 8px;
+      padding: 10px 14px;
+      transition: background 0.2s;
+    }
+    .pred-item.match { background: var(--green); }
+
+    .pred-label {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 6px;
+      font-size: 0.95rem;
+    }
+    .pred-label .name { font-weight: 600; text-transform: capitalize; }
+    .pred-label .pct  { color: var(--muted); font-size: 0.85rem; }
+    .pred-item.match .pred-label .pct { color: rgba(255,255,255,0.8); }
+
+    .pred-bar-bg {
+      height: 6px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 3px;
+      overflow: hidden;
+    }
+    .pred-bar {
+      height: 100%;
+      border-radius: 3px;
+      background: var(--accent);
+      transition: width 0.3s ease;
+    }
+    .pred-item.match .pred-bar { background: rgba(255,255,255,0.8); }
+
+    .waiting-hint {
+      color: var(--muted);
+      font-size: 0.9rem;
+      font-style: italic;
+      padding: 8px 0;
+    }
+
+    /* ── Buttons ─────────────────────────────────────────────────── */
+    .controls {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: opacity 0.15s, transform 0.1s;
+    }
+    button:active { transform: scale(0.97); }
+    button:hover   { opacity: 0.85; }
+
+    .btn-primary { background: var(--accent);  color: #fff; }
+    .btn-ghost   { background: var(--surface); color: var(--text); }
+
+    /* ── Round history ───────────────────────────────────────────── */
+    .history {
+      width: 100%;
+      max-width: 740px;
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 14px 20px;
+    }
+    .history h2 {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--muted);
+      margin-bottom: 10px;
+    }
+    .history-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+    .history-chip {
+      font-size: 0.8rem;
+      padding: 4px 10px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.06);
+      white-space: nowrap;
+    }
+    .history-chip.won  { background: rgba(39,174,96,0.25); color: #6fcf97; }
+    .history-chip.lost { background: rgba(233,69,96,0.2);  color: #eb5757; }
+  </style>
+</head>
+<body>
+
+<h1>Quick<span>Draw</span>!</h1>
+
+<!-- Top bar -->
+<div class="top-bar">
+  <div class="target-word" id="targetDisplay">Loading categories…</div>
+  <div class="timer" id="timer">20</div>
+  <div class="score-box">
+    <div style="color:var(--muted);font-size:0.8rem">SCORE</div>
+    <div class="total" id="totalScore">0</div>
+  </div>
+</div>
+
+<!-- Main drawing area + sidebar -->
+<div class="main">
+  <div class="canvas-wrap">
+    <canvas id="drawCanvas" width="400" height="400"></canvas>
+
+    <!-- Win overlay -->
+    <div class="overlay win" id="winOverlay">
+      <div class="big">🎉 Got it!</div>
+      <div class="sub" id="winLabel"></div>
+      <div class="pts" id="winPoints"></div>
+    </div>
+
+    <!-- Time-up overlay -->
+    <div class="overlay fail" id="failOverlay">
+      <div class="big">⏱ Time's up!</div>
+      <div class="sub" id="failLabel"></div>
+      <button class="btn-primary" onclick="startRound()">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>AI Guesses</h2>
+    <div class="predictions" id="predictions">
+      <div class="waiting-hint">Start drawing to see guesses…</div>
+    </div>
+    <div class="controls">
+      <button class="btn-primary" onclick="startRound()" id="newRoundBtn">New Round</button>
+      <button class="btn-ghost"   onclick="clearCanvas()">Clear</button>
+    </div>
+  </div>
+</div>
+
+<!-- Round history -->
+<div class="history">
+  <h2>Round History</h2>
+  <div class="history-list" id="historyList">
+    <span style="color:var(--muted);font-size:0.85rem">No rounds played yet.</span>
+  </div>
+</div>
+
+
+<script>
+// ── Config ──────────────────────────────────────────────────────────────────
+const API_BASE        = window.location.origin;  // same-origin; adjust for dev
+const CONFIDENCE_FLOOR = 0.40;    // min confidence to surface a live guess
+const ROUND_SECONDS   = 20;
+const RATE_LIMIT_MS   = 500;      // min ms between /predict calls
+const BRUSH_SIZE      = 10;       // px on 400px canvas (~QuickDraw-like at 28px)
+const TOP_K           = 5;
+
+// ── State ────────────────────────────────────────────────────────────────────
+let categories    = [];
+let targetCategory = '';
+let timerInterval = null;
+let timeRemaining = ROUND_SECONDS;
+let gameActive    = false;
+let totalScore    = 0;
+let roundHistory  = [];
+let lastCallTime  = 0;
+let isDrawing     = false;
+
+// ── Canvas setup ─────────────────────────────────────────────────────────────
+const canvas  = document.getElementById('drawCanvas');
+const ctx     = canvas.getContext('2d', { willReadFrequently: true });
+
+function clearCanvas() {
+  // Fill transparent so alpha-channel ink extraction works correctly
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  renderPredictions(null);
+}
+
+function initCanvas() {
+  ctx.strokeStyle = 'rgba(0,0,0,1)';
+  ctx.lineWidth   = BRUSH_SIZE;
+  ctx.lineCap     = 'round';
+  ctx.lineJoin    = 'round';
+}
+
+function getPos(e) {
+  const r = canvas.getBoundingClientRect();
+  const src = e.touches ? e.touches[0] : e;
+  return {
+    x: (src.clientX - r.left) * (canvas.width  / r.width),
+    y: (src.clientY - r.top)  * (canvas.height / r.height),
+  };
+}
+
+canvas.addEventListener('pointerdown', (e) => {
+  if (!gameActive) return;
+  isDrawing = true;
+  ctx.beginPath();
+  const p = getPos(e);
+  ctx.moveTo(p.x, p.y);
+  canvas.setPointerCapture(e.pointerId);
+});
+
+canvas.addEventListener('pointermove', (e) => {
+  if (!isDrawing || !gameActive) return;
+  const p = getPos(e);
+  ctx.lineTo(p.x, p.y);
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.moveTo(p.x, p.y);
+});
+
+canvas.addEventListener('pointerup', (e) => {
+  if (!isDrawing) return;
+  isDrawing = false;
+  ctx.beginPath();
+  if (gameActive) throttledPredict();
+});
+
+canvas.addEventListener('pointerleave', (e) => {
+  if (isDrawing) {
+    isDrawing = false;
+    ctx.beginPath();
+    if (gameActive) throttledPredict();
+  }
+});
+
+// ── Prediction ───────────────────────────────────────────────────────────────
+function throttledPredict() {
+  const now = Date.now();
+  if (now - lastCallTime < RATE_LIMIT_MS) return;
+  lastCallTime = now;
+  sendPredict();
+}
+
+async function sendPredict() {
+  // Export canvas as PNG (RGBA with transparent background = alpha ink mask)
+  const dataURL = canvas.toDataURL('image/png');
+  const base64  = dataURL.split(',')[1];
+
+  let data;
+  try {
+    const res = await fetch(`${API_BASE}/predict`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ image: base64, top_k: TOP_K }),
+    });
+    if (!res.ok) return;
+    data = await res.json();
+  } catch {
+    return; // network error — silently skip
+  }
+
+  if (!gameActive) return; // round ended while request was in flight
+
+  if (data.blank) {
+    renderPredictions(null);
+    return;
+  }
+
+  renderPredictions(data.predictions);
+  checkWin(data.predictions);
+}
+
+function checkWin(predictions) {
+  if (!gameActive) return;
+  const hit = predictions.find(
+    p => p.confidence >= CONFIDENCE_FLOOR &&
+         p.label.toLowerCase() === targetCategory.toLowerCase()
+  );
+  if (hit) triggerWin(hit.confidence);
+}
+
+// ── Game flow ─────────────────────────────────────────────────────────────────
+async function loadCategories() {
+  try {
+    const res  = await fetch(`${API_BASE}/categories`);
+    const data = await res.json();
+    categories = data.categories;
+  } catch {
+    categories = ['apple', 'cat', 'dog', 'house', 'car']; // fallback
+  }
+}
+
+function pickCategory() {
+  return categories[Math.floor(Math.random() * categories.length)];
+}
+
+function startRound() {
+  clearCanvas();
+  hideOverlays();
+  renderPredictions(null);
+
+  targetCategory = pickCategory();
+  document.getElementById('targetDisplay').innerHTML =
+    `Draw: <strong>${targetCategory}</strong>`;
+
+  timeRemaining = ROUND_SECONDS;
+  updateTimerDisplay();
+  gameActive = true;
+
+  clearInterval(timerInterval);
+  timerInterval = setInterval(tickTimer, 1000);
+
+  document.getElementById('newRoundBtn').textContent = 'Skip Round';
+}
+
+function tickTimer() {
+  timeRemaining--;
+  updateTimerDisplay();
+  if (timeRemaining <= 0) triggerFail();
+}
+
+function updateTimerDisplay() {
+  const el = document.getElementById('timer');
+  el.textContent = timeRemaining;
+  el.classList.toggle('urgent', timeRemaining <= 5);
+}
+
+function triggerWin(confidence) {
+  gameActive = false;
+  clearInterval(timerInterval);
+
+  const roundScore = Math.max(100, Math.round(1000 * (timeRemaining / ROUND_SECONDS)));
+  totalScore += roundScore;
+  document.getElementById('totalScore').textContent = totalScore;
+
+  document.getElementById('winLabel').textContent =
+    `"${targetCategory}" — ${(confidence * 100).toFixed(0)}% confident`;
+  document.getElementById('winPoints').textContent = `+${roundScore} pts`;
+
+  document.getElementById('winOverlay').classList.add('visible');
+  document.getElementById('newRoundBtn').textContent = 'New Round';
+
+  addHistory(targetCategory, roundScore, true);
+
+  // Auto-advance after 2.5 s
+  setTimeout(() => {
+    if (!gameActive) startRound();
+  }, 2500);
+}
+
+function triggerFail() {
+  gameActive = false;
+  clearInterval(timerInterval);
+
+  document.getElementById('failLabel').textContent =
+    `It was: "${targetCategory}"`;
+  document.getElementById('failOverlay').classList.add('visible');
+  document.getElementById('newRoundBtn').textContent = 'New Round';
+
+  addHistory(targetCategory, 0, false);
+}
+
+function hideOverlays() {
+  document.getElementById('winOverlay').classList.remove('visible');
+  document.getElementById('failOverlay').classList.remove('visible');
+}
+
+// ── Render predictions ────────────────────────────────────────────────────────
+function renderPredictions(predictions) {
+  const container = document.getElementById('predictions');
+
+  if (!predictions || predictions.length === 0) {
+    container.innerHTML = '<div class="waiting-hint">Start drawing to see guesses…</div>';
+    return;
+  }
+
+  // Filter to items above confidence floor
+  const visible = predictions.filter(p => p.confidence >= CONFIDENCE_FLOOR);
+
+  if (visible.length === 0) {
+    container.innerHTML = '<div class="waiting-hint">Keep drawing…</div>';
+    return;
+  }
+
+  container.innerHTML = visible.map(p => {
+    const pct   = (p.confidence * 100).toFixed(1);
+    const width = Math.round(p.confidence * 100);
+    const isMatch = p.label.toLowerCase() === targetCategory.toLowerCase();
+    return `
+      <div class="pred-item${isMatch ? ' match' : ''}">
+        <div class="pred-label">
+          <span class="name">${p.label}</span>
+          <span class="pct">${pct}%</span>
+        </div>
+        <div class="pred-bar-bg">
+          <div class="pred-bar" style="width:${width}%"></div>
+        </div>
+      </div>`;
+  }).join('');
+}
+
+// ── History ───────────────────────────────────────────────────────────────────
+function addHistory(word, pts, won) {
+  roundHistory.unshift({ word, pts, won });
+  const list = document.getElementById('historyList');
+  list.innerHTML = roundHistory.map(r =>
+    `<span class="history-chip ${r.won ? 'won' : 'lost'}">
+      ${r.word}${r.won ? ` +${r.pts}` : ' ✗'}
+    </span>`
+  ).join('');
+}
+
+// ── Init ─────────────────────────────────────────────────────────────────────
+(async () => {
+  initCanvas();
+  await loadCategories();
+  document.getElementById('targetDisplay').textContent = 'Press New Round to start!';
+  document.getElementById('newRoundBtn').textContent = 'Start Game';
+})();
+</script>
+</body>
+</html>
